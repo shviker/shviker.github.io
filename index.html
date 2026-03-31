@@ -1,2 +1,152 @@
-<h1>Welcome to My Site</h1>
-dsds
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring Swift | Modern Programming</title>
+    <style>
+        :root {
+            --swift-orange: #f05138;
+            --apple-gray: #f5f5f7;
+            --text-dark: #1d1d1f;
+            --text-secondary: #6e6e73;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            margin: 0;
+            padding: 0;
+            background-color: var(--apple-gray);
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 3rem 1rem;
+            text-align: center;
+            border-bottom: 1px solid #d2d2d7;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            background: linear-gradient(45deg, #f05138, #ff8a00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        section {
+            background: white;
+            padding: 2rem;
+            border-radius: 18px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--swift-orange);
+            font-size: 1.8rem;
+            margin-top: 0;
+        }
+
+        .image-gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 2rem 0;
+        }
+
+        @media (max-width: 600px) {
+            .image-gallery { grid-template-columns: 1fr; }
+        }
+
+        .img-card {
+            background: #fff;
+            padding: 10px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #e5e5e5;
+        }
+
+        img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .caption {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        .code-snippet {
+            background-color: #1d1d1f;
+            color: #f5f5f7;
+            padding: 1.5rem;
+            border-radius: 12px;
+            font-family: "SFMono-Regular", Consolas, monospace;
+            font-size: 0.9rem;
+            overflow-x: auto;
+            border-left: 5px solid var(--swift-orange);
+        }
+
+        .tag {
+            display: inline-block;
+            background: #fff0ee;
+            color: var(--swift-orange);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.8rem;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome  to my Swift site</h1>
+    <p>Powerful. Intuitive. Open Source.</p>
+</header>
+
+<div class="container">
+    
+    <section>
+        <span class="tag">Overview</span>
+        <h2>The Language for Everyone</h2>
+        <p>Swift is a robust and intuitive programming language created by Apple for building apps for iOS, Mac, Apple TV, and Apple Watch. It’s designed to give developers more freedom than ever. Swift is easy to use and open-source, so anyone with an idea can create something incredible.</p>
+    </section>
+
+    <div class="image-gallery">
+        <div class="img-card">
+            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=500&q=80" alt="iOS Development">
+            <p class="caption">Figure 1: Building seamless iOS experiences.</p>
+        </div>
+        <div class="img-card">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=500&q=80" alt="Programming Code">
+            <p class="caption">Figure 2: Clean and expressive syntax.</p>
+        </div>
+    </div>
+
+    <section>
+        <h2>Modern Features</h2>
+        <p>Swift includes features that make code easier to read and write, while giving the developer the control needed for a true systems programming language.</p>
+        <ul>
+            <li><strong>Safe:
