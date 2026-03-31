@@ -1,124 +1,76 @@
-\<\!DOCTYPE html\>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML Example with Images</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        p {
+            color: #666;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto 20px auto;
+            text-align: center;
+        }
+        /* 图片容器，用于并排显示 */
+        .image-container {
+            display: flex;
+            justify-content: center; /* 居中对齐 */
+            gap: 20px; /* 两张图片之间的间距 */
+            flex-wrap: wrap; /* 在小屏幕上自动换行 */
+            margin-top: 30px;
+        }
+        /* 单个图片的样式 */
+        .image-box {
+            background-color: white;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center; /* 说明文字居中 */
+            max-width: 40%; /* 限制宽度，防止过大 */
+        }
+        .image-box img {
+            max-width: 100%; /* 图片宽度适应容器 */
+            height: auto; /* 保持比例 */
+            border-radius: 4px;
+        }
+        .image-caption {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #555;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
 
-\<html lang="en"\>
-\<head\>
-\<meta charset="UTF-8"\>
-\<meta name="viewport" content="width=device-width, initial-scale=1.0"\>
-\<title\>The SWIFT Project | Future of Global Payments\</title\>
-\<style\>
-:root {
-\--primary: \#00529B;
-\--secondary: \#00A3E0;
-\--dark: \#1A1A1A;
-\--light: \#F4F7F9;
-}
-body {
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-line-height: 1.6;
-color: var(--dark);
-background-color: var(--light);
-margin: 0;
-padding: 0;
-}
-header {
-background: var(--primary);
-color: white;
-padding: 2rem 1rem;
-text-align: center;
-}
-nav {
-background: \#fff;
-padding: 1rem;
-text-align: center;
-box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-nav a {
-margin: 0 15px;
-text-decoration: none;
-color: var(--primary);
-font-weight: bold;
-}
-.container {
-max-width: 900px;
-margin: 2rem auto;
-padding: 0 1rem;
-background: white;
-border-radius: 8px;
-box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-}
-.content-section {
-padding: 2rem;
-border-bottom: 1px solid \#eee;
-}
-h2 {
-color: var(--primary);
-border-left: 5px solid var(--secondary);
-padding-left: 10px;
-}
-.highlight {
-background: \#e7f3ff;
-padding: 1rem;
-border-radius: 4px;
-font-style: italic;
-}
-footer {
-text-align: center;
-padding: 2rem;
-font-size: 0.9rem;
-color: \#666;
-}
-\</style\>
-\</head\>
-\<body\>
+    <h1>Welcome to My Simple Page</h1>
 
-\<header\>
-\<h1\>The SWIFT Project\</h1\>
-\<p\>Revolutionizing Global Financial Messaging\</p\>
-\</header\>
+    <p>This is a basic example of an HTML page. Below, you can see two images displayed side-by-side with captions. We have used CSS to give them a nice border and shadow effect.</p>
 
-\<nav\>
-\<a href="\#overview"\>Overview\</a\>
-\<a href="\#gpi"\>SWIFT gpi\</a\>
-\<a href="\#iso"\>ISO 20022\</a\>
-\<a href="\#future"\>Future Outlook\</a\>
-\</nav\>
+    <div class="image-container">
 
-\<div class="container"\>
+        <div class="image-box">
+            <img src="https://via.placeholder.com/400x300?text=Image+One" alt="A placeholder image for the first example">
+            <div class="image-caption">Image 1: A scenic placeholder view.</div>
+        </div>
 
-```
-<section id="overview" class="content-section">
-    <h2>Overview</h2>
-    <p>The <strong>SWIFT Project</strong> (Society for Worldwide Interbank Financial Telecommunication) is the backbone of the global financial system. Contrary to popular belief, SWIFT does not move money; it moves <strong>information</strong>. It provides a secure, standardized network for financial institutions to send and receive information about financial transactions.</p>
-    <p class="highlight">Established in 1973, it now connects more than 11,000 banking organizations and corporations in over 200 countries.</p>
-</section>
+        <div class="image-box">
+            <img src="https://via.placeholder.com/400x300?text=Image+Two" alt="A placeholder image for the second example">
+            <div class="image-caption">Image 2: Another beautiful placeholder.</div>
+        </div>
 
-<section id="gpi" class="content-section">
-    <h2>SWIFT gpi (Global Payments Innovation)</h2>
-    <p>One of the most significant recent projects is <strong>SWIFT gpi</strong>. This initiative was launched to address the historical pain points of cross-border payments: speed, transparency, and end-to-end tracking.</p>
-    <ul>
-        <li><strong>Speed:</strong> Nearly 50% of gpi payments are credited within 30 minutes.</li>
-        <li><strong>Tracking:</strong> Banks can track their payments in real-time, much like a parcel delivery.</li>
-        <li><strong>Certainty:</strong> Full transparency on fees and exchange rates.</li>
-    </ul>
-</section>
+    </div>
 
-<section id="iso" class="content-section">
-    <h2>The ISO 20022 Migration</h2>
-    <p>The financial world is currently undergoing a massive "project" of migrating to the <strong>ISO 20022</strong> standard. This is a multi-year transition to a highly structured and data-rich messaging format.</p>
-    <p>This allows for better automation, improved compliance checking, and fewer manual interventions, making the global economy more efficient.</p>
-</section>
-
-<section id="future" class="content-section">
-    <h2>The Future: CBDCs and Blockchain</h2>
-    <p>The SWIFT Project is currently exploring the integration of <strong>Central Bank Digital Currencies (CBDCs)</strong> and tokenized assets. By experimenting with blockchain interoperability, SWIFT aims to ensure that the existing financial infrastructure can communicate with the "digital currencies of tomorrow."</p>
-</section>
-```
-
-\</div\>
-
-\<footer\>
-\<p\>\&copy; 2026 Financial Tech Insights. All rights reserved.\</p\>
-\</footer\>
-
-\</body\>
-\</html\>
+</body>
+</html>
